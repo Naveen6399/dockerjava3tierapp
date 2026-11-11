@@ -2,7 +2,7 @@
 
 services:
   devopsdb:
-    image: shaikmustafa/flm-oct:db
+    image: naveen6399/3tier:db
     ports:
       - "3306:3306"
     deploy:
@@ -11,7 +11,7 @@ services:
       - mynetwork
 
   application:
-    image: shaikmustafa/flm-oct:javaapp
+    image: naveen6399/3tier:app
     ports:
       - "80:8080"
     deploy:
